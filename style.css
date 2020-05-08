@@ -1,0 +1,506 @@
+*{
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .header {
+    background-color: #316DC3;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 12px;
+  }
+  .header a {
+    text-decoration: none;
+  } 
+  .social_links a{
+    padding-left: 15px;
+  }
+  .top_text {
+    color: #fafafa;
+    font-size: 15px;
+  }  
+
+  .top_right_links a{
+    background-color: #fafafa;
+    padding: 5px 8px;
+    color: #000000;
+    font-size: 11px;
+    text-decoration: none;
+    margin-left: 3px;
+  }
+  .header a:hover {
+    text-decoration: none;
+  }
+   
+   #navbar {
+    overflow: hidden;
+    background-color: #f7f8fa;
+  }
+
+  .navbar_image {
+    display: inline-block;
+    padding: 1px;
+  }
+  .navbar_menu {
+    display: inline-block;
+    margin-left: 220px;
+    position: relative;
+    top: 10px;
+    
+    
+}  
+  .navbar_menu a {
+    float: right;
+    color: #000000;
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+   
+  }
+  
+  .navbar_menu a:hover {
+    background-color: #316DC3;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    
+  }
+  
+  .navbar_menu a.active {
+    background-color: #316DC3;
+    color: white;
+    border-radius: 30px;
+  } 
+
+  /* .navbar {
+    background-color: #f7f8fa;
+  }
+  .navbar img {
+    margin-left: 60px;
+    height: 50px;
+  }
+
+ 
+  .collapse {
+    margin-left: 400px;
+  }
+  .collapse a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    padding: 12px 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;  
+  }
+  .collapse a:hover {
+    background-color: #316DC3;
+    color: white;
+    border-radius: 30px ;
+  }
+  .collapse a.active {
+    background-color: #316DC3;
+    color: white;
+    border-radius: 30px;
+  }  */
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .social_links, .top_text, .top_right_links {
+    display: inline-block;
+  }
+  
+ .slider_image {
+   vertical-align: middle;
+   height: 500px;
+ }
+
+.mySlide {
+  display: none;
+}
+.slider {
+  position: relative;
+  margin: auto;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  position: relative;
+  bottom: 50px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #316DC3;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.running_text_below_slider {
+  background-color: #316DC3 ;
+  position: relative;
+  bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: #f2f2f2;
+  padding: 2px 0px 0px 10px;
+  text-align: center;
+
+}
+
+#introHeading {
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+
+.Introduction {
+  background-color: #f7f8fa;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.9;
+  padding: 40px;  
+}
+.Introduction p{
+  text-align: justify !important;
+  font-size: 15px;
+}
+.Introduction img {
+  height: 40px;
+}
+.linesArroundLogo {
+  color: green;
+  position: relative;
+  top: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+}
+.logoAndLines {
+  position: relative;
+  bottom: 5px;
+
+}
+.dailyNumbers {
+  background-color: #0754fa;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #fafafa;
+  padding-left: 40px; 
+  padding-right: 40px;
+
+}
+.dailyDastrakhan {
+  display: inline-block;
+  margin-left: 60px;
+}
+.education {
+  display: inline-block;
+  margin-left: 60px;
+}
+.familyAdoption{
+  display: inline-block;
+  margin-left: 60px;
+}
+.medical {
+  display: inline-block;
+  margin-left: 60px;
+}
+.animatedNumbers {
+  font-size: 42px;  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.categoryMonth {
+  color: #00ff00;
+  
+}
+.introSpan {
+  color: #316DC3;
+}
+.ductionSpan {
+  color: #427900;
+}
+.categoriesOfNumbers {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.categoryMonth {
+  font-size: 18px;
+}
+.category {
+  font-size: 16px;
+}
+
+#whatWeAreDoingHeading {
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+.whatWeAreDoing {
+  text-align: center;
+  background-color: #f7f8fa;
+  padding: 10px;
+  line-height: 1.9;
+  padding-top: 50px;  
+  padding-bottom: 50px;
+}
+.whatweSpan {
+  color: #316DC3;
+}
+.aredoingSpan {
+    color: #427900;
+}
+.whatWeAreDoingFirstCol {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.whatWeAreDoingSecondCol {
+  display: flex;
+  justify-content: space-around;
+
+} 
+.whatWeAreDoingBoxes {
+  background-color: #fff;
+  margin-top: 25px;
+  margin-left: 15px;
+  box-shadow: #fafafa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 5px 5px 5px 5px #f7f8fa;
+  
+}
+
+.missionAndProjects {
+  padding-top: 50px;
+  height: 350px;
+}
+.missionAndProjectHeading{
+  color: #316DC3;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:normal ;
+}
+
+.lineBeneathHeading {
+  color: green;
+  position: relative;
+  bottom: 17px;
+}
+.upcomingProjects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.missionAndProjectsCategories {
+  width: 730px;
+
+} 
+.hepatitis {
+  display: inline-block;
+  padding: 20px;
+  width: 350px;
+  background-color:	#e5e5e5;
+}
+.hepatitis img,h5{
+  display: inline-block;
+}
+.hepatitis h5 {
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+  
+}
+.housingSociety {
+  padding: 20px;
+  width: 350px;
+  display: inline-block;
+  background-color:	#e5e5e5;
+}
+.housingSociety h5{
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+}
+.itLiteracy {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 20px;
+  width: 350px;
+  background-color:	#e5e5e5;
+}
+.itLiteracy h5 {
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+}
+.tharparkar {
+  margin-top: 20px;
+  padding: 20px;
+  width: 350px;
+  display: inline-block;
+  background-color:	#e5e5e5; 
+}
+.tharparkar h5 {
+  padding-left: 20px;
+  position: relative;
+  top: 5px;
+}
+
+
+.upcomingEvents{
+  width: 300px;
+  display: inline-block;
+  position: relative;
+  bottom: 230px;
+  left: 750px; 
+}
+.upcomingEventsHeading {
+  color: #316DC3;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:normal ;
+}
+
+.imageGallery {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 200px;
+  line-height: 1.9; 
+
+}
+.imageGalleryHeading {
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+}
+.imageSpan {
+  color: #316DC3;
+}
+.gallerySpan {
+  color: #427900;
+}
+
+.gallery {
+  margin-top: 25px;
+}
+
+.address {
+  background-color: black;
+  color: #f2f2f2;
+  padding-top: 80px;
+  padding-bottom: 50px;
+ 
+}
+.emailAndContacts {
+  width: 400px;
+  display: inline-block;
+  color: #bbbbbb;
+}
+.inlineNumber {
+  position: relative;
+  left: 180px;
+  bottom: 120px;
+}
+.usefulLinks {
+  display: inline-block;
+  width: 300px;
+  position: relative;
+  bottom: 190px;
+  margin-left: 20px;
+  }
+.lineBeneathHeadingUsefulLinks {
+  color: green;
+  position: relative;
+  top: 10px;
+  right: 110px;
+  
+  
+}
+.contactWithUs {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative;
+  bottom: 160px;
+  }
+.contactWithUs a {
+  background-color: #316DC3;
+  border-radius: 30px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+.bottom_line {
+  background-color: #316DC3;
+  padding: 5px;
+}
+.bottom_line p{
+  color: #f2f2f2;
+  margin-top: 5px;
+  display: inline-block;
+}
+.bottomToTopLink {
+  display: inline-block;
+  color: #000000; 
+  margin-left: 750px;
+}
+.bottomToTopLink:hover {
+  color: #f2f2f2;
+}
+
+.phoneIcon ul {
+  list-style-image: url('images/phone.png');
+}
+
